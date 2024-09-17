@@ -1,0 +1,57 @@
+ h1 {
+    color: limegreen;
+    font-family: "Fascinate Inline", system-ui;
+}
+
+.container {
+    background-color: yellow;
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.hide-desktop-only {
+    display: none;
+}
+
+.col img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+    h1 {
+        color: darkorange;
+        font-family: "Roboto", system-ui;
+    }
+
+    .col {
+        width: 45%
+    }
+
+    .hide-tablet-only {
+        display: none;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 400px) {
+    h1 {
+        color: blue;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .col {
+        width: 100%;
+    }
+}
